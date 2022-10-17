@@ -24,7 +24,5 @@ logs/
 *.iml
 *.ipr
 
-
-
 ### VS Code ###
 .vscode/
