@@ -10,7 +10,9 @@ public class NumberAnalysis {
 
         System.out.println("Enter numbers for analysis:");
         int numbers = Integer.parseInt(br.readLine());
+        br.close();
         int count = countNumbers(numbers);
+
         System.out.println("The number of digits in the number is: " + count);
         numberGreaterThanNumberToCompare(numbers);
         writeTheNumberInReverse(numbers);
