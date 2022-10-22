@@ -1,4 +1,4 @@
-package com.softserve.academy.homeWorks.homeWork1;
+package com.softserve.academy.homeWorks.homeWork_1;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -10,7 +10,6 @@ public class HowAreYou {
 
         System.out.println("How are you?");
         String answer = br.readLine();
-
         System.out.println("You are " + answer);
     }
 }
