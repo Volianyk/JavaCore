@@ -10,13 +10,13 @@ public class TrafficLight {
         System.out.println("Enter time:");
         int time = Integer.parseInt(br.readLine());
         br.close();
-        int colorTime=time%5;
+        int colorTime = time % 5;
         System.out.println(colorTime);
         trafficLight(colorTime);
     }
 
     public static void trafficLight(int colorTime) {
-        if (colorTime > 0 && colorTime <=3) {
+        if (colorTime > 0 && colorTime <= 3) {
             System.out.println("GREEN light");
         } else {
             System.out.println("RED light");
