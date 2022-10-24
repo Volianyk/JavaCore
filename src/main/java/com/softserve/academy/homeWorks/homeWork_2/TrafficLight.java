@@ -10,17 +10,22 @@ public class TrafficLight {
         System.out.println("Enter time:");
         int time = Integer.parseInt(br.readLine());
         br.close();
-        int colorTime = time % 5;
-        System.out.println(colorTime);
-        trafficLight(colorTime);
+
+        System.out.println(time);
+        trafficLight(time);
     }
 
-    public static void trafficLight(int colorTime) {
+    public static String trafficLight(int time) {
+        int colorTime = time % 5; //cycle=5 minute, 1-3m green light, 4-5m red light
+        String color;
         if (colorTime > 0 && colorTime <= 3) {
             System.out.println("GREEN light");
+            color = "GREEN light";
         } else {
             System.out.println("RED light");
+            color = "RED light";
         }
+        return color;
     }
 
 }
