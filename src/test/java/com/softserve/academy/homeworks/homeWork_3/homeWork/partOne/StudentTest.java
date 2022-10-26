@@ -37,7 +37,7 @@ class StudentTest {
     void betterStudent() {
         Student studentTest = new Student();
         studentTest.setRating(50);
-        assertEquals(true, st.betterStudent(studentTest.getRating()));
+        assertEquals(true, st.betterStudent(studentTest));
     }
 
     @Test

@@ -3,14 +3,15 @@ package com.softserve.academy.homeWorks.homeWork_3.homeWork.partOne;
 public class Student {
     String name;
     int rating;
-    static int avgRating;
+
+    private static int avgRating;
 
     public String getName() {
         return name;
     }
 
     public void setName(String name) {
-        if (this.name==null) {
+        if (this.name == null) {
             this.name = name;
         }
     }
@@ -23,6 +24,15 @@ public class Student {
         this.rating = rating;
     }
 
+    public static int getAvgRating() {
+        return avgRating;
+    }
+
+    public static void setAvgRating(int avgRating) {
+        Student.avgRating = avgRating;
+    }
+
+
     public Student() {
     }
 
@@ -31,8 +41,8 @@ public class Student {
         this.rating = rating;
     }
 
-    public boolean betterStudent(int rating) {
-        if (this.rating > rating) {
+    public boolean betterStudent(Student student) {
+        if (this.rating > student.getRating()) {
             return true;
         }
         return false;
