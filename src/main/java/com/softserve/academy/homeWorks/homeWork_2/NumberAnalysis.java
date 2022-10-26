@@ -17,6 +17,7 @@ public class NumberAnalysis {
         numberGreaterThanNumberToCompare(numbers);
         writeTheNumberInReverse(numbers);
 
+
     }
 
     public static void writeTheNumberInReverse(int numbers) {
@@ -44,6 +45,7 @@ public class NumberAnalysis {
             int compareNumber = numbers % 10;
             if (compareNumber > numberToCompare) {
                 result = true;
+                break;
             }
             numbers = numbers / 10;
         }

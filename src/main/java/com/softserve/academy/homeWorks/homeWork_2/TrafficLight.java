@@ -15,13 +15,10 @@ public class TrafficLight {
 
     public static String trafficLight(int time) {
         int colorTime = time % 5; //cycle=5 minute, 1-3m green light, 4-5m red light
-        String color;
+        String color = "RED light";
         if (colorTime > 0 && colorTime <= 3) {
             color = "GREEN light";
-        } else {
-            color = "RED light";
         }
         return color;
     }
-
 }
