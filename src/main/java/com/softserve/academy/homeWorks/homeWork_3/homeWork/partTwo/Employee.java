@@ -49,8 +49,9 @@ public class Employee {
         return "Employee " + name + " has rate: " + rate + ", and has been worked for " + hours + " hours";
     }
 
-    public void changeRate(int rate) {
+    public int changeRate(int rate) {
         this.rate = rate;
+        return getSalary();
     }
 
     public double getBonuses() {

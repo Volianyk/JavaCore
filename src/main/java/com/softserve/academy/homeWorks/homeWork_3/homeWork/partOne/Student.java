@@ -42,14 +42,11 @@ public class Student {
     }
 
     public boolean betterStudent(Student student) {
-        if (this.rating > student.getRating()) {
-            return true;
-        }
-        return false;
+        return (this.rating > student.getRating());
     }
 
     @Override
     public String toString() {
-        return "Student " + name + " has rating " + rating + ".";
+        return "Student " + name + " has rating " + rating + ", avgRating" + avgRating + ".";
     }
 }

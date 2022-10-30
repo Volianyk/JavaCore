@@ -42,6 +42,6 @@ class StudentTest {
 
     @Test
     void testToString() {
-        assertEquals("Student Robert has rating 65.", st.toString());
+        assertEquals("Student Robert has rating 65, avgRating0.", st.toString());
     }
 }
