@@ -6,7 +6,7 @@ logs/
 !**/src/test/**/target/
 *.log
 *.jar
-*.xml
+
 
 ### STS ###
 .apt_generated
