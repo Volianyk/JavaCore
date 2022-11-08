@@ -1,4 +1,4 @@
-package com.softserve.academy.homeWorks.homeWork1;
+package com.softserve.academy.homeWorks.homeWork_1;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -14,10 +14,10 @@ public class Calculate {
         int b = Integer.parseInt(br.readLine());
 
         int sum = a + b;
-        int subtraction = a - b;
+        double subtraction = a - b;
         int multiply = a * b;
         double division = a / b;
 
-        System.out.printf("sum=%d, subtraction=%d, multiply=%d, division=%.2f" , sum, subtraction, multiply, division);
+        System.out.printf("sum=%d, subtraction=%.2f, multiply=%d, division=%.2f", sum, subtraction, multiply, division);
     }
 }
