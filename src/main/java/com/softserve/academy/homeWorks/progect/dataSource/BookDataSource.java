@@ -20,11 +20,11 @@ public class BookDataSource implements iBookDataSource {
         listBooks.add(new Book(140, "The Masterworks by Bruce Brooks Pfeiffer", "Wright F.L.", 290, "Art", 150));
         listBooks.add(new Book(158, "Islamic Arts", "Bloom J.", 110, "Art", 150));
 
-        listOrders.add(new Order(1, 11111, 21112, new int[]{146, 1234}));
-        listOrders.add(new Order(2, 11112, 21111, new int[]{146}));
-        listOrders.add(new Order(3, 11111, 21113, new int[]{1567, 1678, 146}));
-        listOrders.add(new Order(4, 11113, 21114, new int[]{1234, 1345}));
-        listOrders.add(new Order(5, 11113, 21115, new int[]{1567, 1345}));
+        listOrders.add(new Order(1, 11111, 21112, new int[]{140, 128}));
+        listOrders.add(new Order(2, 11112, 21111, new int[]{140}));
+        listOrders.add(new Order(3, 11111, 21113, new int[]{158, 11, 134}));
+        listOrders.add(new Order(4, 11113, 21114, new int[]{128, 134}));
+        listOrders.add(new Order(5, 11113, 21115, new int[]{11, 138}));
     }
 
     @Override
