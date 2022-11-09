@@ -11,6 +11,18 @@ public class Employee {
         this.salary = salary;
     }
 
+    public String getName() {
+        return name;
+    }
+
+    public int getAge() {
+        return age;
+    }
+
+    public double getSalary() {
+        return salary;
+    }
+
     public String report(){
         return String.format("Name: %s, Age: %d, Salary: \u20B4 %.2f.", name,age,salary);
     }
