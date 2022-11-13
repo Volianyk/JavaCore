@@ -4,6 +4,8 @@ import com.softserve.academy.homeWorks.progect.dataSource.BookDataSource;
 import com.softserve.academy.homeWorks.progect.model.Book;
 import com.softserve.academy.homeWorks.progect.model.Order;
 
+import java.util.ArrayList;
+
 public class OrderController {
     private BookDataSource bookDataSource;
 
@@ -37,5 +39,9 @@ public class OrderController {
             totalPrice += getPriceOrder(order);
         }
         return totalPrice;
+    }
+
+    public ArrayList<Order> getOrders() {
+        return bookDataSource.getOrders();
     }
 }
