@@ -23,7 +23,6 @@ public class OrderController {
     }
 
     private Book getBookElement(int id) {
-        //Book currentBook = null;
         for (Book book : bookDataSource.getBooks()) {
             if (book.getIdBook() == id) {
                 return book;
