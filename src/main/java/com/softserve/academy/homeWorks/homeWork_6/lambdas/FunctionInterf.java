@@ -1,4 +1,4 @@
-package com.softserve.academy.homeWorks.homeWork_6.lecture.lambdas;
+package com.softserve.academy.homeWorks.homeWork_6.lambdas;
 
 @FunctionalInterface
 public interface FunctionInterf {
