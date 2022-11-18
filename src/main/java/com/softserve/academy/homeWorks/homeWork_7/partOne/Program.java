@@ -45,12 +45,10 @@ public class Program {
     }
 
     public static String longestWord(String s) {
-        String longest = Arrays.stream(s.split(" "))
+        return Arrays.stream(s.split(" "))
                 .max(Comparator.comparingInt(String::length))
                 .orElse(null);
-        return longest;
     }
-
 }
 
 

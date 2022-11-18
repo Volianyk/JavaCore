@@ -9,8 +9,7 @@ class ProgramTest {
 
     @Test
     void findSecondWordTest() {
-        String res = findSecondWord("1 22 333 00");
-        assertEquals("22", res);
+        assertEquals("22", findSecondWord("1 22 333 00"));
     }
 
     @Test
